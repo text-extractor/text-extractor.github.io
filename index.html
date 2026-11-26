@@ -77,6 +77,6 @@ en:{name:"Text Extractor",h1a:"Turn any image or video",h1b:"into text in second
 var L=(localStorage.l||((navigator.language||"").indexOf("ar")==0?"ar":"en"));
 function ap(){var d=document;d.documentElement.lang=L;d.documentElement.dir=L=="ar"?"rtl":"ltr";d.querySelectorAll("[data-k]").forEach(function(e){e.textContent=T[L][e.dataset.k]});d.getElementById("lang").textContent=L=="ar"?"English":"العربية";d.title=T[L].name}
 document.getElementById("lang").onclick=function(){L=L=="ar"?"en":"ar";localStorage.l=L;ap()};ap();
-fetch("https://api.github.com/repos/fadelkam-app/text-extractor/releases?per_page=100").then(function(r){return r.json()}).then(function(j){var n=0;j.forEach(function(r){(r.assets||[]).forEach(function(a){n+=a.download_count||0})});document.getElementById("dcn").textContent=n.toLocaleString("en")}).catch(function(){});
+fetch("https://api.github.com/repos/fadelkam-app/text-extractor/releases?per_page=100").then(function(r){return r.json()}).then(function(j){var n=0;j.forEach(function(r){(r.assets||[]).forEach(function(a){n+=a.download_count||0})});n=Math.max(0,n-24);document.getElementById("dcn").textContent=n.toLocaleString("en")}).catch(function(){});
 </script>
 </body></html>
