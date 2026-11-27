@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Next update v3.4 | Text Extractor</title>
+<meta name="description" content="What is coming in Text Extractor v3.4: more accurate text from images and video, camera scan, PDF and SRT export, translation and a new look.">
+<meta name="keywords" content="extract text from image, image to text, OCR app, Arabic OCR, extract text from video, video to text, audio to text, speech to text, Arabic OCR, text extractor app">
+<meta name="theme-color" content="#7c3aed">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://text-extractor.github.io/en/update/">
+<link rel="alternate" hreflang="ar" href="https://text-extractor.github.io/update/">
+<link rel="alternate" hreflang="en" href="https://text-extractor.github.io/en/update/">
+<link rel="alternate" hreflang="x-default" href="https://text-extractor.github.io/update/">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Text Extractor">
+<meta property="og:title" content="Next update v3.4 | Text Extractor">
+<meta property="og:description" content="What is coming in Text Extractor v3.4: more accurate text from images and video, camera scan, PDF and SRT export, translation and a new look.">
+<meta property="og:url" content="https://text-extractor.github.io/en/update/">
+<meta property="og:image" content="https://text-extractor.github.io/og.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Next update v3.4 | Text Extractor">
+<meta name="twitter:description" content="What is coming in Text Extractor v3.4: more accurate text from images and video, camera scan, PDF and SRT export, translation and a new look.">
+<meta name="twitter:image" content="https://text-extractor.github.io/og.png">
+
+<style>
+:root{--p:#7c3aed;--p2:#a78bfa;--bg:#0f0a1e;--card:#1a1330;--tx:#f3efff;--mu:#a99fc7}
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(600px 400px at 80% -5%,#7c3aed55,transparent),radial-gradient(500px 400px at 5% 30%,#c084fc33,transparent);pointer-events:none}
+.w{max-width:1000px;margin:auto;padding:0 20px;position:relative}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.lg{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#c084fc);display:grid;place-items:center}
+.lg svg{width:20px;height:20px}
+#lang{background:#ffffff14;border:1px solid #ffffff22;color:var(--tx);padding:7px 16px;border-radius:99px;cursor:pointer;font:inherit}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:40px 0 60px}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.2;margin-bottom:16px}
+h1 span{background:linear-gradient(90deg,#c4b5fd,#e879f9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mu);font-size:18px;margin-bottom:28px;max-width:480px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 30px;border-radius:99px;box-shadow:0 10px 40px #7c3aed77;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 50px #7c3aedaa}
+.btn svg{width:22px;height:22px}
+.meta{margin-top:14px;color:var(--mu);font-size:13px}
+.phone{width:240px;height:480px;margin:auto;border-radius:36px;border:6px solid #2b2146;background:linear-gradient(180deg,#1e1538,#130d26);padding:22px 16px;box-shadow:0 30px 80px #7c3aed55;position:relative;animation:fl 5s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.phone:before{content:"";position:absolute;top:8px;left:50%;width:60px;height:6px;border-radius:9px;background:#2b2146;transform:translateX(-50%)}
+.bar{height:34px;border-radius:12px;background:#ffffff10;margin:14px 0 10px}
+.ln{height:9px;border-radius:9px;background:#ffffff1f;margin:9px 0}
+.ln.a{background:linear-gradient(90deg,#a78bfa,#e879f9);width:70%}
+.pill{display:inline-block;background:#7c3aed;border-radius:99px;padding:6px 16px;font-size:12px;margin-top:14px}
+.tabs{position:absolute;bottom:14px;left:16px;right:16px;display:flex;justify-content:space-around}
+.tabs i{width:26px;height:26px;border-radius:50%;background:#ffffff1a}.tabs i:first-child{background:#8b5cf6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;padding-bottom:50px}
+.c{background:var(--card);border:1px solid #ffffff12;border-radius:22px;padding:24px}
+.ic{width:46px;height:46px;border-radius:50%;background:#7c3aed33;display:grid;place-items:center;margin-bottom:14px}
+.ic svg{width:24px;height:24px;stroke:#c4b5fd;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.c h3{margin-bottom:6px;font-size:18px}.c p{color:var(--mu);font-size:15px}
+h2{font-size:28px;margin-bottom:20px}
+ol{list-style:none;counter-reset:s;display:grid;gap:12px;padding-bottom:50px;padding-inline-start:0}
+li{counter-increment:s;background:var(--card);border-radius:16px;padding:16px 20px 16px 20px;display:flex;gap:14px;align-items:center;border:1px solid #ffffff12}
+li:before{content:counter(s);flex:0 0 32px;height:32px;border-radius:50%;background:var(--p);display:grid;place-items:center;font-weight:700}
+.cta{text-align:center;padding:30px 0 60px}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:20px 0 40px;border-top:1px solid #ffffff12}
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center}.sub{margin-inline:auto}.phone{width:200px;height:400px}}
+
+h1,h2,h3{font-weight:700}
+.faq{padding-bottom:50px}
+.faq details{background:var(--card);border:1px solid #ffffff12;border-radius:16px;padding:16px 20px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px}
+.faq p{color:var(--mu);margin-top:10px}
+.use{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding-bottom:50px}
+.lead{color:var(--mu);max-width:760px;margin-bottom:22px}
+section{margin-bottom:6px}
+a.lnk{color:#c4b5fd}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><div class="logo"><div class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"/><path d="M8.5 10h7M8.5 13.5h4"/></svg></div><span>Text Extractor</span></div><a id="lang" href="https://text-extractor.github.io/update/" hreflang="ar" lang="ar" style="text-decoration:none">العربية</a></nav>
+<main><section class="hero" style="display:block"><div><h1>Next update: version v3.4</h1><p class="sub">Here is what we are working on. Coming soon. The order and details may change a little before release.</p><span class="pill" style="position:static;display:inline-block">Coming soon</span><p class="meta">Updates install over the old version and keep your data. Current version: <b id="ver"></b></p><p style="margin-top:18px"><a class="btn" href="https://text-extractor.github.io/en/" style="background:transparent;border:2px solid #a78bfa"><span>Back to home</span></a></p></div></section><section class="grid"><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">1</div><h3>More accurate text from images (OCR)</h3><p>Our main focus: clearer, more accurate Arabic and English text from photos, screenshots and printed pages, tested on many samples before release.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">2</div><h3>Camera scan</h3><p>Open the camera inside the app and snap a page or book. The text appears right away, no need to save the photo first.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">3</div><h3>Send images and videos in from any app</h3><p>From your gallery, WhatsApp or any app: tap Share, pick Text Extractor, and extraction starts straight away.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">4</div><h3>Export as TXT, SRT and PDF</h3><p>Save the text as a TXT or PDF file. For video and audio, save subtitles as an SRT file with timings. Share in one tap.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">5</div><h3>Translate the text</h3><p>Translate extracted text between Arabic, English and other languages on the same screen.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">6</div><h3>Text from video and audio</h3><p>The same speech-to-text for videos and recordings, with better speed and stability.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">7</div><h3>Background extraction with a notification</h3><p>If you leave the app while extraction runs, it keeps going. You see progress in a status-bar notification you can tap to come back, and it tells you when it is done or failed. (Some phones may need battery set to unrestricted.)</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">8</div><h3>Update banner and new-version alerts</h3><p>The app tells you when a new version is out and you can update in one tap, no need to visit the site.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">9</div><h3>Email-verified accounts</h3><p>When you sign up you get a verification link by email. You can use the app before verifying, but archive sync across your phones works after you verify.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">10</div><h3>Video downloader removed</h3><p>The app is now fully focused on extracting text from images, video and audio.</p></div><div class="c"><div class="ic" style="font-weight:800;font-size:18px;color:#c4b5fd">11</div><h3>New teal look and new icons</h3><p>A fresh teal color, new clearer icons and a cleaner, easier app overall.</p></div></section></main>
+<footer><div>Text Extractor · Free</div><div style="margin-top:8px;direction:ltr">Powered By : <a href="https://www.instagram.com/mazzikajr" target="_blank" rel="noopener" style="color:#c4b5fd;font-weight:700;text-decoration:none">Mazzika</a></div><div style="margin-top:10px;font-size:11px;opacity:.8"><span>Downloads</span>: <span id="dcn">-</span></div></footer>
+</div>
+<script>
+fetch("https://api.github.com/repos/fadelkam-app/text-extractor/releases?per_page=100").then(function(r){return r.json()}).then(function(j){var n=0;j.forEach(function(r){if(r.prerelease)return;(r.assets||[]).forEach(function(a){n+=a.download_count||0})});var L=j.filter(function(r){return !r.prerelease&&!r.draft})[0];if(L)document.getElementById("ver").textContent=L.tag_name;n=Math.max(0,n-24);document.getElementById("dcn").textContent=n.toLocaleString("en")}).catch(function(){});
+</script>
+</body></html>
