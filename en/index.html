@@ -86,6 +86,8 @@ a.lnk{color:#c4b5fd}
 <h1>Image to text (OCR) and video to text</h1>
 <p class="sub">A free Android app that turns any image or video into written text in Arabic and English. It also transcribes audio.</p>
 <a class="btn" id="dl" href="https://github.com/fadelkam-app/text-extractor/releases/latest/download/TextExtractor.apk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg><span>Download the app</span></a>
+<a class="btn" id="upd" href="https://github.com/fadelkam-app/text-extractor/releases/latest/download/TextExtractor.apk" style="background:transparent;border:2px solid #a78bfa;color:inherit;margin-inline-start:10px"><span>Update</span></a>
+<p class="meta">Already have the app? Tap Update to get the latest version. It installs over the old one and keeps your data. Latest version: <b id="ver"></b></p>
 <p class="meta">Android only · free APK · updates install over the old version</p>
 </div>
 <div class="phone" aria-hidden="true"><div class="bar"></div><div class="ln a"></div><div class="ln"></div><div class="ln" style="width:85%"></div><div class="ln" style="width:55%"></div><div class="ln"></div><div class="ln" style="width:75%"></div><span class="pill">Extract</span><div class="tabs"><i></i><i></i><i></i><i></i></div></div>
@@ -99,6 +101,6 @@ a.lnk{color:#c4b5fd}
 <footer><div>Text Extractor · Free</div><div style="margin-top:8px;direction:ltr">Powered By : <a href="https://www.instagram.com/mazzikajr" target="_blank" rel="noopener" style="color:#c4b5fd;font-weight:700;text-decoration:none">Mazzika</a></div><div style="margin-top:10px;font-size:11px;opacity:.8"><span>Downloads</span>: <span id="dcn">-</span></div></footer>
 </div>
 <script>
-fetch("https://api.github.com/repos/fadelkam-app/text-extractor/releases?per_page=100").then(function(r){return r.json()}).then(function(j){var n=0;j.forEach(function(r){if(r.prerelease)return;(r.assets||[]).forEach(function(a){n+=a.download_count||0})});n=Math.max(0,n-24);document.getElementById("dcn").textContent=n.toLocaleString("en")}).catch(function(){});
+fetch("https://api.github.com/repos/fadelkam-app/text-extractor/releases?per_page=100").then(function(r){return r.json()}).then(function(j){var n=0;j.forEach(function(r){if(r.prerelease)return;(r.assets||[]).forEach(function(a){n+=a.download_count||0})});var L=j.filter(function(r){return !r.prerelease&&!r.draft})[0];if(L)document.getElementById("ver").textContent=L.tag_name;n=Math.max(0,n-24);document.getElementById("dcn").textContent=n.toLocaleString("en")}).catch(function(){});
 </script>
 </body></html>
